@@ -1,15 +1,15 @@
 package main
 
 import (
-	"net/http"
-	"io/ioutil"
 	"encoding/json"
+	"io/ioutil"
+	"net/http"
 )
 
 const Url = "https://viacep.com.br/ws/"
 
 func main() {
-	mux := http.NewServeMux()
+	mux := http.NewServeMux() // com server mux temos mais controle do nosso servidor e podemos criar  varios endpoints
 	mux.HandleFunc("/", HomeH)
 	mux.Handle("/blog", blog{title: "Meu blog"})
 	mux.Handle("/buscar/", Endereco{})
@@ -40,6 +40,7 @@ type Endereco struct {
 	Ddd         string `json:"ddd"`
 	Siafi       string `json:"siafi"`
 }
+
 func (e Endereco) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	cepParam := r.URL.Query().Get("cep")
 	if cepParam == "" {
