@@ -54,6 +54,15 @@ func main() {
 	// 	fmt.Println(product)
 	// }
 		
+	// var p Product 
+	// db.First(&p, 1)
+	// p.Name = "TECLADO WATER COOLER"
+	// db.Save(&p)
 
+	// var p2 Product
+	// db.First(&p, 1)
+	// fmt.Println(p2.Name)
+	// db.Delete(&p2)
+	
 
 }
