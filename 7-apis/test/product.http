@@ -31,3 +31,4 @@ Content-Type: application/json
 
 GET http://localhost:8080/products HTTP/1.1
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2ODcyNjIxMTcsInN1YiI6ImYxNmEwYjFmLTc1MGEtNDg3Yi1iZDI4LTU4OWE4YTkwYTAwMSJ9.ZEDxf_qVmQ229ptNwXwuh02ZZXw8kAC9TCXa_akarII

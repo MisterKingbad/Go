@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
@@ -31,7 +30,7 @@ func main() {
 
 	tx := db.Begin()
 	var c Category
-	err = tx.Debug().Clause(clause.Loking{Strength: "UPDATE"}).First(&c, 1).Error
+	err = tx.Debug().Clauses(clause.Locking{Strength: "UPDATE"}).First(&c, 1).Error
 	if err != nil {
 		panic(err)
 	}
@@ -40,4 +39,3 @@ func main() {
 	tx.Commit()
 
 }
-,
