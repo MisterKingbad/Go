@@ -9,6 +9,7 @@ require (
 	github.com/go-chi/jwtauth v1.2.0
 	github.com/mattn/go-sqlite3 v1.14.17
 	github.com/rabbitmq/amqp091-go v1.8.1
+	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 	github.com/stretchr/testify v1.8.4
 	github.com/swaggo/http-swagger v1.3.4
@@ -36,7 +37,6 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/mailru/easyjson v0.7.6 // indirect
-	github.com/spf13/cobra v1.7.0 // indirect
 	github.com/swaggo/files v0.0.0-20220610200504-28940afbdbfe // indirect
 	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/tools v0.9.3 // indirect

@@ -1,10 +1,10 @@
 CREATE TABLE categories (
-  id varchar(32) NOT NULL PRIMARY KEY,
+  id varchar(36) NOT NULL PRIMARY KEY,
   name text NOT NULL,
   description text
 );
 CREATE TABLE courses (
-  id varchar(32) NOT NULL PRIMARY KEY,
+  id varchar(36) NOT NULL PRIMARY KEY,
   category_id varchar(36) NOT NULL,
   name text NOT NULL,
   description text,
