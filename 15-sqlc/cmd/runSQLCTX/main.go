@@ -95,8 +95,7 @@ func main() {
 		panic(err)
 	}
 	for _, course := range courses {
-		fmt.Printf("Category: %s, Course ID: %s, Course Name: %s, Course Description: %s, Course Price: %f", course.CategoryName, course.ID, course.Name, course.Description.String
-		, course.Price)
+		fmt.Printf("Category: %s, Course ID: %s, Course Name: %s, Course Description: %s, Course Price: %f", course.CategoryName, course.ID, course.Name, course.Description.String, course.Price)
 	}
 
 	// coursesArgs := CourseParams{
